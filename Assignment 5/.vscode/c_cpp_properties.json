@@ -1,0 +1,47 @@
+{
+    "configurations": [
+        {
+            "name": "windows-gcc-x64",
+            "includePath": [
+                "c:/Users/Braden/Documents/School/ENSF 614/Assignments/Assignment 5/**"
+            ],
+            "compilerPath": "C:/cygwin64/bin/g++.exe",
+            "intelliSenseMode": "windows-gcc-x64",
+            "compilerArgs": [
+                ""
+            ],
+            "compilerPathInCppPropertiesJson": "gcc",
+            "mergeConfigurations": false,
+            "browse": {
+                "path": [
+                    "c:/Users/Braden/Documents/School/ENSF 614/Assignments/Assignment 5/**",
+                    "${workspaceFolder}"
+                ],
+                "limitSymbolsToIncludedHeaders": true
+            }
+        },
+        {
+            "name": "myCfg",
+            "includePath": [
+                "${workspaceFolder}/**"
+            ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE"
+            ]
+        },
+        {
+            "name": "Win32",
+            "includePath": [
+                "${workspaceFolder}/**"
+            ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE"
+            ]
+        }
+    ],
+    "version": 4
+}

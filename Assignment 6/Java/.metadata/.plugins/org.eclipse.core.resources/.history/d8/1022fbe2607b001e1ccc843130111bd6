@@ -1,0 +1,25 @@
+import java.awt.Graphics;
+
+class Decorator implements Component {
+	protected Component cmp;
+	protected int x;
+	protected int y;
+	protected int width;
+	public int height;
+
+    public Decorator(Component component, int i, int j, int k, int l) {
+    	x = i;
+		y = j;
+		width = k;
+		height = l;
+		cmp = component; 
+    }
+  
+
+    @Override
+	public void draw(Graphics g) {
+		// TODO Auto-generated method stub
+		  cmp.draw(g);
+		
+	}
+}

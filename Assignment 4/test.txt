@@ -1,0 +1,6 @@
+Name: Calgary, x coordinate: 100.00, y coordinate: 50.00
+Name: Edmonton, x coordinate: 100.00, y coordinate: 150.00
+Name: Vancouver, x coordinate: 50.00, y coordinate: 50.00
+Name: Regina, x coordinate: 200.00, y coordinate: 50.00
+Name: Toronto, x coordinate: 500.00, y coordinate: 50.00
+Name: Montreal, x coordinate: 200.00, y coordinate: 50.00

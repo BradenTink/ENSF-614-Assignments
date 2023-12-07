@@ -1,0 +1,15 @@
+import java.awt.Graphics;
+
+public class ColouredGlassDecorator implements Component {
+
+	public ColouredGlassDecorator(ColouredGlassDecorator colouredGlassDecorator, int i, int j, int k, int l) {
+		// TODO Auto-generated constructor stub
+	}
+
+	@Override
+	public void draw(Graphics g) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

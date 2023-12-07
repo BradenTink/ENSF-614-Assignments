@@ -1,0 +1,29 @@
+import java.awt.Graphics;
+
+public class BorderDecorator extends Decorator{
+	private int x;
+    private int y;
+    private int width;
+    private int height;
+	
+	public BorderDecorator(Component component, int i, int j, int k, int l) {
+		// TODO Auto-generated constructor stub
+		super(component);
+        this.x = i;
+        this.y = j;
+        this.width = k;
+        this.height = l;
+		
+	
+		
+	}
+	@Override
+    public void draw(Graphics g) {
+        // Add border drawing behavior before calling the decorated component's draw method
+        // You can customize the behavior here
+		super.draw(g);
+		g.drawRect(x, y, width, height);
+		
+    }
+
+}

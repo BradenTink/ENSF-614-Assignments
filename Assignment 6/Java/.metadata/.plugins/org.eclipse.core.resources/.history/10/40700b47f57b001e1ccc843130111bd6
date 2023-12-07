@@ -1,0 +1,45 @@
+import java.awt.Graphics;
+import java.awt.BasicStroke;
+import java.awt.Graphics2D;
+import java.awt.Stroke;
+
+public class BorderDecorator extends Decorator{
+	private int x;
+    private int y;
+    private int width;
+    private int height;
+    private int dashLength; 
+    private int gapLength; 
+    
+	
+	public BorderDecorator(Component component, int i, int j, int k, int l) {
+		// TODO Auto-generated constructor stub
+		super(component);
+        this.x = i;
+        this.y = j;
+        this.width = k;
+        this.height = l;
+        this.dashLength = 5;
+        this.gapLength = 5;
+		
+	
+		
+	}
+	@Override
+    public void draw(Graphics g) {
+        // Add border drawing behavior before calling the decorated component's draw method
+        // You can customize the behavior here
+		
+		Stroke dashed = new BasicStroke(3, BasicStroke.CAP_BUTT, BasicStroke.JOIN_BEVEL, 0, new float[]{9},0);
+		Graphics2D g2d = (Graphics2D) g;
+		g2d.setStroke(dashed);
+		
+//		if (g instanceof Graphics2D) {
+//	            Graphics2D g2d = (Graphics2D) g;
+//	            g2d.setStroke(new BasicStroke(2.0f, BasicStroke.CAP_BUTT, BasicStroke.JOIN_MITER, dashLength, new float[] { dashLength, gapLength }, 0.0f));
+//	            g2d.drawRect(x, y, width, height);
+//	     }
+		
+    }
+
+}

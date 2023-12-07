@@ -1,0 +1,44 @@
+
+import java.util.ArrayList;
+
+
+
+public class MyVector<T>{
+	
+	private ArrayList<T> storageM;
+	private Sorter tempS;
+	
+	public MyVector(int n) {
+        this.storageM = new ArrayList<T>(n);
+    
+    }
+	
+
+	
+	public void add(T value) {
+		storageM.add(storageM.size(), (T) value);
+		
+		
+	}
+	
+	public <T> void setSortStrategy(Sorter s) {
+		tempS = s;
+	}
+	
+	public void performSort(MyVector<T> other) {		
+
+		tempS.sort(other.storageM);
+
+	}
+	
+	public <T> void display() {
+	
+		for(T item: storageM) {
+			System.out.println(T);
+		}
+		
+		
+		
+	}	
+	 
+}
